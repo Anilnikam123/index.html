@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE Inspection Form</title>
+</head>
+<body>
+    <h1>HSE Inspection Form</h1>
+    <form id="hseForm">
+        <label for="project_site">Project Site:</label>
+        <select id="project_site" name="project_site" required>
+            <option value="BSRP">BSRP</option>
+            <option value="MOPA-Goa">MOPA-Goa</option>
+            <option value="Navi Mumbai-Airport">Navi Mumbai-Airport</option>
+            <option value="NH-32">NH-32</option>
+            <!-- Add more project sites here -->
+        </select>
+        <br><br>
+
+        <label for="hse_officer">HSE Officer:</label>
+        <select id="hse_officer" name="hse_officer" required>
+            <option value="Aajam Ansari">Aajam Ansari</option>
+            <option value="Anmulya Paikray">Anmulya Paikray</option>
+            <option value="Kallol Ghosh">Kallol Ghosh</option>
+            <option value="Omprakash Yadav">Omprakash Yadav</option>
+            <!-- Add more officers here -->
+        </select>
+        <br><br>
+
+        <label for="hse_task">Task:</label>
+        <select id="hse_task" name="hse_task" required>
+            <option value="Alcohol Testing Report Week-1">Alcohol Testing Report Week-1</option>
+            <option value="Preparation of Monthly HSE Training Calendar">Preparation of Monthly HSE Training Calendar</option>
+            <option value="Checklist For Gas Cutting Set Inspection">Checklist For Gas Cutting Set Inspection</option>
+            <!-- Add more tasks here -->
+        </select>
+        <br><br>
+
+        <label for="task_date">Date:</label>
+        <input type="date" id="task_date" name="task_date" required>
+        <br><br>
+
+        <label for="file_upload">Attach Inspection Record:</label>
+        <input type="file" id="file_upload" name="file_upload" accept="image/*,application/pdf" required>
+        <br><br>
+
+        <label for="remarks">Remarks (Optional):</label>
+        <textarea id="remarks" name="remarks" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
